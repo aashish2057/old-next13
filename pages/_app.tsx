@@ -1,6 +1,6 @@
 import type { AppProps } from "next/app"
-import { Inter as FontSans } from "@next/font/google"
 import { ThemeProvider } from "next-themes"
+import { Inter as FontSans } from '@next/font/google'
 
 import "@/styles/globals.css"
 
@@ -19,7 +19,7 @@ export default function App({ Component, pageProps }: AppProps) {
 				}
 			}`}</style>
       <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-        <Component {...pageProps} />
+          <Component {...pageProps} />
       </ThemeProvider>
     </>
   )
