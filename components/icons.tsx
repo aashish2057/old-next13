@@ -2,8 +2,8 @@ import {
   Laptop,
   LucideProps,
   Moon,
-  SunMedium,
   PlusSquare,
+  SunMedium,
   type Icon as LucideIcon,
 } from "lucide-react"
 

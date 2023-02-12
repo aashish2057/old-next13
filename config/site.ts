@@ -11,8 +11,7 @@ interface SiteConfig {
 
 export const siteConfig: SiteConfig = {
   name: "Aurora",
-  description:
-    "Financial Dashbaord",
+  description: "Financial Dashbaord",
   mainNav: [
     {
       title: "Home",
