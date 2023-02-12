@@ -1,7 +1,7 @@
 import type { NextApiRequest, NextApiResponse } from "next"
 
 import { client } from "../plaid"
-import { pb } from "../../pocketbase"
+import { pb } from "../../pocketbase/pocketbase"
 
 export default async function handler(
   req: NextApiRequest,
