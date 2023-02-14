@@ -1,7 +1,7 @@
 import type { NextApiRequest, NextApiResponse } from "next"
 
-import { client } from "../plaid"
 import { pb } from "../../pocketbase/pocketbase"
+import { client } from "../plaid"
 
 export default async function handler(
   req: NextApiRequest,
@@ -18,7 +18,7 @@ export default async function handler(
         item_id: response.data.item_id,
       }
 
-      const record = await pb.collection('access_tokens').create(data)
+      const record = await pb.collection("access_tokens").create(data)
       console.log(record)
 
       res.status(200).json({ success: "access granted" })
